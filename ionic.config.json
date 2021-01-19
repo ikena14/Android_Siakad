@@ -1,0 +1,7 @@
+{
+  "name": "siakadapp-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
