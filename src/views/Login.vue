@@ -1,8 +1,8 @@
 <template>
     <ion-page>
-        <ion-header color="dark">
-            <ion-toolbar>
-                <ion-title>Login</ion-title>
+        <ion-header>
+            <ion-toolbar color="dark">
+                <ion-title class="tengah">Login</ion-title>
             </ion-toolbar>
         </ion-header>
             <ion-content>
@@ -69,6 +69,8 @@ export default defineComponent({
     }
 })
 </script>
-<style>
-
+<style scoped>
+    .tengah{
+        text-align:center;
+    }
 </style>

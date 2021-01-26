@@ -8,15 +8,6 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/login'
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/message/:id',
-    component: () => import('../views/ViewMessage.vue')
-  },
-  {
     path: '/login',
     name: 'Login',
     component: () => import('../views/Login.vue')
@@ -25,6 +16,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/siswa',
     name: 'Siswa',
     component: () => import('../views/Siswa.vue')
+  },
+  {
+    path: '/siswa/nilai',
+    name: 'Nilai Siswa',
+    component: () => import('../views/Nilai.vue')
   }
 ]
 

@@ -2,7 +2,8 @@
     <ion-page>
         <ion-header>
             <ion-toolbar color="dark">
-                <ion-title>Siswa</ion-title>
+                <ion-title>Keseluruhan Status Siswa</ion-title>
+                <ion-button @click="nilai" class="kanan" color="primary">Nilai Keseluruhan Siswa</ion-button>
             </ion-toolbar>
         </ion-header>
         <ion-content>
@@ -30,7 +31,8 @@ import{
         IonContent,
         IonList,
         IonItem,
-        IonLabel
+        IonLabel,
+        IonButton
     }from '@ionic/vue'
 import axios from 'axios'
     import { defineComponent } from 'vue'
@@ -48,7 +50,8 @@ import axios from 'axios'
             IonContent,
             IonList,
             IonItem,
-            IonLabel
+            IonLabel,
+            IonButton
         },
 
         mounted(){
@@ -58,10 +61,20 @@ import axios from 'axios'
             .then(response =>{
                 this.siswa = response.data.data
             })
+        },
+        methods:{
+            nilai(){
+                this.$router.push("/siswa/nilai")
+            }
         }
     })
 </script>
 
 <style scoped>
-
+    .kanan{
+        float: right;
+    }
+    .kanan_{
+        float: right;
+    }
 </style>
